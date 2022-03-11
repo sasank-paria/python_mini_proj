@@ -3,6 +3,7 @@ from PyQt5 import uic
 from PyQt5 import QtWidgets,uic
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QLabel, QMainWindow
 from PyQt5.QtGui import QPixmap
+#------------------------------------------------------------------------------------------------------------------
 
 class signin(QDialog):
     def __init__(self):
@@ -18,8 +19,8 @@ welcome=signin()
 widget=QStackedWidget()
 
 widget.addWidget(welcome)
-widget.setFixedHeight(768)
-widget.setFixedWidth(425)
+widget.setFixedHeight(692)
+widget.setFixedWidth(713)
 widget.show()
 
 try:

@@ -3,6 +3,8 @@ from PyQt5 import uic
 from PyQt5 import QtWidgets,uic
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QLabel, QMainWindow
 from PyQt5.QtGui import QPixmap
+import images_qrc
+#--------------------------------------------------------------------------------------------------------------------
 
 class welcome_page(QDialog):
     def __init__(self):
@@ -14,6 +16,8 @@ class welcome_page(QDialog):
 
 #screen output
 app = QApplication(sys.argv)
+win=welcome_page()
+win.show()
 welcome=welcome_page()
 widget=QStackedWidget()
 
