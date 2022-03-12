@@ -32,7 +32,7 @@ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.994318, stop
 QWidget#widget{
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727, stop:0.243781 rgba(83, 187, 255, 255), stop:1 rgba(255, 179, 249, 255))};</string>
    </property>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="signin_username_field">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -48,7 +48,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727,
      <string>enter your username</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="signin_password_field">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -99,11 +99,11 @@ font: 75 8pt &quot;MS Sans Serif&quot;;</string>
      <string>sign in to your existing account</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="login_button">
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>500</y>
+      <y>510</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -123,26 +123,6 @@ font: 75 14pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
      <string>login</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>400</y>
-      <width>151</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color:rgb(255, 255, 255);
-font: 75 11pt &quot;MS Sans Serif&quot;;</string>
-    </property>
-    <property name="text">
-     <string>forgot password</string>
-    </property>
-    <property name="flat">
-     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -181,14 +161,65 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>400</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>don't have an account? click here to register.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>180</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>signin to your existing account</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="messagefield">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>460</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 0, 0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>label_4</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
+   <zorder>signin_username_field</zorder>
+   <zorder>signin_password_field</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>login_button</zorder>
    <zorder>label</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>messagefield</zorder>
   </widget>
  </widget>
  <resources/>

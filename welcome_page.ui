@@ -60,7 +60,7 @@ color: rgb(26, 127, 194);</string>
      <string>Welcome!</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="welcome_page_signin_button">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -100,7 +100,7 @@ color:rgb(255, 255, 255)</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="welcome_page_register_button">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -204,7 +204,7 @@ background-color: rgb(255, 255, 255);
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="images.qrc">:/newPrefix/Premium Vector _ Illustration of yoga girl meditation with sun and clouds.jpg</pixmap>
+     <pixmap>:/newPrefix/Premium Vector _ Illustration of yoga girl meditation with sun and clouds.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -232,8 +232,8 @@ color: rgb(255, 255, 255);</string>
    </widget>
    <zorder>label_6</zorder>
    <zorder>label_2</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
+   <zorder>welcome_page_signin_button</zorder>
+   <zorder>welcome_page_register_button</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
    <zorder>label_3</zorder>

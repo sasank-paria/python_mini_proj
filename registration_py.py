@@ -11,8 +11,7 @@ class registration(QDialog):
     def __init__(self):
         super(registration,self).__init__()
         uic.loadUi("registration.ui",self)
-        self.label=self.findChild(QLabel,"label")
-        self.show()
+
 
 #screen output
 app = QApplication(sys.argv)
