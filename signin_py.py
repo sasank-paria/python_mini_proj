@@ -15,23 +15,23 @@ class signin(QDialog):
         self.login_button.clicked.connect(self.login_backend)
 
     def login_backend(self):
+        from homepage_py import  homepage
         username = self.signin_username_field.text()
         password = self.signin_password_field.text()
 
         if len(username)==0 or len(password)==0:
             self.messagefield.setText("enter valid data!")
-        #
-        # else:
-        #     conn = sqlite3.connect("shop_data.db")
-        #     cur = conn.cursor()
-        #     query = 'SELECT password FROM login_info WHERE username =\''+username+"\'"
-        #     cur.execute(query)
-        #     result_pass = cur.fetchone()[0]
-        #     if result_pass == password:
-        #         print("Successfully logged in.")
-        #         self.error.setText("")
-        #     else:
-        #         self.error.setText("Invalid username or password")
+
+        else:
+            conn = sqlite3.connect("python_mini_proj.db")
+            cur = conn.cursor()
+            query = 'SELECT password FROM signin_page WHERE username =\''+username+"\'"
+            cur.execute(query)
+            pass_ = cur.fetchone()[0]
+            if pass_ == password:
+               home=homepage()
+            else:
+                self.messagefield.setText("Invalid username or password")
 
 
 
