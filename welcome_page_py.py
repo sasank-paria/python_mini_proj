@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QLab
 from PyQt5.QtGui import QPixmap
 import images_qrc
 #--------------------------------------------------------------------------------------------------------------------
-# from signin_py import signin
+
 
 
 class welcome_page(QDialog):

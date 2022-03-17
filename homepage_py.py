@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import uic
-from PyQt5 import QtWidgets,uic
+from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QLabel, QMainWindow
 from PyQt5.QtGui import QPixmap
 #-------------------------------------------------------------------------------------------------------------------------
