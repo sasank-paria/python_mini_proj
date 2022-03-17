@@ -13,9 +13,14 @@ class signin(QDialog):
         uic.loadUi("signin.ui",self)
         self.signin_password_field.setEchoMode(QtWidgets.QLineEdit.Password)
         self.login_button.clicked.connect(self.login_backend)
+        self.click_here_toregister.clicked.connect(self.toregister)
+
+    def toregister(self):
+        from registration_py import registration
+        register=registration()
 
     def login_backend(self):
-        from homepage_py import  homepage
+
         username = self.signin_username_field.text()
         password = self.signin_password_field.text()
 
@@ -25,10 +30,11 @@ class signin(QDialog):
         else:
             conn = sqlite3.connect("python_mini_proj.db")
             cur = conn.cursor()
-            query = 'SELECT password FROM signin_page WHERE username =\''+username+"\'"
+            query = 'SELECT password FROM signup_page WHERE username =\''+username+"\'"
             cur.execute(query)
             pass_ = cur.fetchone()[0]
             if pass_ == password:
+               from homepage_py import homepage
                home=homepage()
             else:
                 self.messagefield.setText("Invalid username or password")
