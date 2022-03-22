@@ -25,9 +25,9 @@ class signin(QDialog):
         else:
             conn = sqlite3.connect("python_mini_proj.db")
             cur = conn.cursor()
-            query = 'SELECT password FROM signin_page WHERE username =\''+username+"\'"
+            query = 'SELECT password FROM signup_page WHERE username =\''+username+"\'"
             cur.execute(query)
-            pass_ = cur.fetchone()
+            pass_ = cur.fetchone()[0]
             if pass_ == password:
                from homepage_py import homepage
                home=homepage()
