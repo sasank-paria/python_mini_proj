@@ -28,7 +28,7 @@ class registration(QDialog):
         confirmpassword = self.reg_confirmedpassword_field.text()
         emailid=self.reg_emailid_field.text()
         mobile=self.reg_mobileno_field.text()
-        resaddress=self.reg_resaddress_field.text()
+        resaddress=self.reg_resaddress_field.toPlainText()
         pincode=self.reg_pincode_field.text()
 
         if len(user)==0 or len(password)==0 or len(confirmpassword)==0:
