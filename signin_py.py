@@ -15,7 +15,7 @@ class signin(QDialog):
         self.login_button.clicked.connect(self.login_backend)
 
     def login_backend(self):
-        from homepage_py import  homepage
+
         username = self.signin_username_field.text()
         password = self.signin_password_field.text()
 
@@ -27,8 +27,9 @@ class signin(QDialog):
             cur = conn.cursor()
             query = 'SELECT password FROM signin_page WHERE username =\''+username+"\'"
             cur.execute(query)
-            pass_ = cur.fetchone()[0]
+            pass_ = cur.fetchone()
             if pass_ == password:
+               from homepage_py import homepage
                home=homepage()
             else:
                 self.messagefield.setText("Invalid username or password")
