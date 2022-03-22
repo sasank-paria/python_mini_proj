@@ -20,7 +20,7 @@ class registration(QDialog):
 
     def login_page_open(self):
         from signin_py import signin
-        login1=signin()
+
 
     def signup_backend(self):
         user = self.reg_user_name_field.text()
