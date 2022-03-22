@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1035</width>
+    <height>1074</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1091</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(11, 149, 245);
+
+font: 22pt &quot;MS Sans Serif&quot;;
+
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>                                         Hospital finder </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>140</y>
+     <width>461</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255); </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>1041</width>
+     <height>1041</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1001</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QWidget#widget{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727, stop:0.243781 rgba(83, 187, 255, 255), stop:1 rgba(255, 179, 249, 255))};</string>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>100</y>
+      <width>461</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>661</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>461</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(:/newPrefix/download.jpg)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/newPrefix/download.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="register_error_msg_text_field">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>630</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>20</y>
+      <width>641</width>
+      <height>1011</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255); </string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="reg_user_name_field">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 12pt &quot;MS Sans Serif&quot;;
+
+background-color: rgb(229, 250, 255);</string>
+    </property>
+    <property name="text">
+     <string>AREA</string>
+    </property>
+    <property name="placeholderText">
+     <string>USER NAME</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="reg_user_name_field_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>50</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 12pt &quot;MS Sans Serif&quot;;
+
+background-color: rgb(229, 250, 255);</string>
+    </property>
+    <property name="text">
+     <string>STATE</string>
+    </property>
+    <property name="placeholderText">
+     <string>USER NAME</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="reg_user_name_field_3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>110</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 12pt &quot;MS Sans Serif&quot;;
+
+background-color: rgb(229, 250, 255);</string>
+    </property>
+    <property name="text">
+     <string>CITY</string>
+    </property>
+    <property name="placeholderText">
+     <string>USER NAME</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="reg_user_name_field_4">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>230</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 12pt &quot;MS Sans Serif&quot;;
+
+background-color: rgb(229, 250, 255);</string>
+    </property>
+    <property name="text">
+     <string>PINCODE</string>
+    </property>
+    <property name="placeholderText">
+     <string>USER NAME</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signup_button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>340</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgb(4, 118, 159)
+}
+
+QPushButton:hover {
+  background-color:rgb(0, 0, 0)
+};
+
+color:rgb(255, 255, 255);
+
+font: 75 15pt &quot;MS Sans Serif&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
