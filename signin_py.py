@@ -30,7 +30,8 @@ class signin(QDialog):
         else:
             conn = sqlite3.connect("python_mini_proj.db")
             cur = conn.cursor()
-            query = 'SELECT password FROM signup_page WHERE username =\''+username+"\'"
+            #query = 'SELECT password FROM signup_page WHERE username =\''+username+"\'"
+            query='SELECT username password FROM signup_page '
             cur.execute(query)
             pass_ = cur.fetchone()[0]
             if pass_ == password:
