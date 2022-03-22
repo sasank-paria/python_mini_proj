@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1292</width>
-    <height>759</height>
+    <width>1295</width>
+    <height>758</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,7 +43,7 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1247</width>
+         <width>1250</width>
          <height>3800</height>
         </rect>
        </property>
@@ -250,7 +250,7 @@ p, li { white-space: pre-wrap; }
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;STEP 1 :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="get_vaccinated">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -538,7 +538,7 @@ font: 75 8pt &quot;MS Shell Dlg 2&quot;;</string>
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Book your appointment in the nearset hospital by clicking the button below &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="hospital_finder">
         <property name="geometry">
          <rect>
           <x>30</x>
@@ -721,7 +721,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
          <string>by clicking the button given below</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="medicine_search">
         <property name="geometry">
          <rect>
           <x>50</x>

@@ -18,11 +18,12 @@ class welcome_page(QDialog):
     def gotologin(self):
         from signin_py import signin
         login=signin()
+        widget.close()
 
     def gotoregister(self):
         from  registration_py import registration
         register=registration()
-
+        widget.close()
 
 
 

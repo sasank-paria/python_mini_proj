@@ -21,6 +21,7 @@ class registration(QDialog):
     def login_page_open(self):
         from signin_py import signin
         r=signin()
+        widget.close()
 
 
     def signup_backend(self):

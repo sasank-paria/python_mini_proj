@@ -18,6 +18,7 @@ class signin(QDialog):
     def goregister(self):
         from registration_py import registration
         r=registration()
+        widget.close()
 
     def login_backend(self):
 
@@ -37,6 +38,7 @@ class signin(QDialog):
             if pass_ == password:
                from homepage_py import homepage
                home=homepage()
+               widget.close()
             else:
                 self.messagefield.setText("Invalid username or password")
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>909</width>
-    <height>810</height>
+    <width>908</width>
+    <height>812</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>-10</y>
      <width>1491</width>
      <height>841</height>
     </rect>
@@ -94,7 +94,7 @@ color: rgb(255, 0, 0);</string>
 color:rgb(45, 169, 203)</string>
     </property>
     <property name="text">
-     <string>Find your vaccine slot</string>
+     <string>Find your medicine</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -111,7 +111,7 @@ color:rgb(45, 169, 203)</string>
 color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>enter pin code</string>
+     <string>enter medicine name</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
@@ -181,10 +181,10 @@ color:rgb(255, 255, 255);
 font: 75 15pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
-     <string>book your slot</string>
+     <string>buy it</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="vaccine_slot_home_button">
+   <widget class="QPushButton" name="medicine_home_button">
     <property name="geometry">
      <rect>
       <x>40</x>
