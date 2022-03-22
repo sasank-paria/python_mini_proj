@@ -13,6 +13,11 @@ class signin(QDialog):
         uic.loadUi("signin.ui",self)
         self.signin_password_field.setEchoMode(QtWidgets.QLineEdit.Password)
         self.login_button.clicked.connect(self.login_backend)
+        self.click_here_toregister.clicked.connect(self.goregister)
+
+    def goregister(self):
+        from registration_py import registration
+        r=registration()
 
     def login_backend(self):
 
