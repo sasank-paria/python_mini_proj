@@ -161,22 +161,6 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>400</y>
-      <width>341</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-    </property>
-    <property name="text">
-     <string>don't have an account? click here to register.</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
@@ -196,9 +180,9 @@ color: rgb(255, 255, 255);</string>
    <widget class="QLabel" name="messagefield">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>270</x>
       <y>460</y>
-      <width>241</width>
+      <width>351</width>
       <height>21</height>
      </rect>
     </property>
@@ -210,6 +194,22 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="click_here_toregister">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>400</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>don't have an account? click here to register.</string>
+    </property>
+   </widget>
    <zorder>label_4</zorder>
    <zorder>signin_username_field</zorder>
    <zorder>signin_password_field</zorder>
@@ -217,9 +217,9 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <zorder>label_3</zorder>
    <zorder>login_button</zorder>
    <zorder>label</zorder>
-   <zorder>label_5</zorder>
    <zorder>label_6</zorder>
    <zorder>messagefield</zorder>
+   <zorder>click_here_toregister</zorder>
   </widget>
  </widget>
  <resources/>

@@ -7,7 +7,6 @@ import sqlite3
 #------------------------------------------------------------------------------------------------------------------
 
 
-
 class signin(QDialog):
     def __init__(self):
         super(signin,self).__init__()
@@ -16,7 +15,7 @@ class signin(QDialog):
         self.login_button.clicked.connect(self.login_backend)
 
     def login_backend(self):
-        # from homepage_py import  homepage
+        from homepage_py import  homepage
         username = self.signin_username_field.text()
         password = self.signin_password_field.text()
 
@@ -30,7 +29,6 @@ class signin(QDialog):
             cur.execute(query)
             pass_ = cur.fetchone()[0]
             if pass_ == password:
-               from homepage_py import homepage
                home=homepage()
             else:
                 self.messagefield.setText("Invalid username or password")
