@@ -18,7 +18,7 @@ class signin(QDialog):
     def goregister(self):
         from registration_py import registration
         r=registration()
-        widget.close()
+        widget.setCurrentIndex(widget.currentIndex() + 1)
 
     def login_backend(self):
 
@@ -38,7 +38,7 @@ class signin(QDialog):
             if pass_ == password:
                from homepage_py import homepage
                home=homepage()
-               widget.close()
+               widget.setCurrentIndex(widget.currentIndex() + 1)
             else:
                 self.messagefield.setText("Invalid username or password")
 
@@ -62,8 +62,3 @@ widget.addWidget(welcome)
 widget.setFixedHeight(692)
 widget.setFixedWidth(713)
 widget.show()
-
-try:
-    sys.exit(app.exec_())
-except:
-    print("exiting")

@@ -18,12 +18,14 @@ class welcome_page(QDialog):
     def gotologin(self):
         from signin_py import signin
         login=signin()
-        widget.close()
+        widget.addWidget(login)
+        #widget.setCurrentIndex(widget.currentIndex() + 1)
 
     def gotoregister(self):
         from  registration_py import registration
         register=registration()
-        widget.close()
+        widget.addWidget(register)
+        #widget.setCurrentIndex(widget.currentIndex() + 1)
 
 
 
@@ -38,4 +40,7 @@ widget.setFixedHeight(735)
 widget.setFixedWidth(1124)
 widget.show()
 
-sys.exit(app.exec_())
+try:
+    sys.exit(app.exec_())
+except:
+    print("exiting")

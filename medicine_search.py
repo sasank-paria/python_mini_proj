@@ -16,6 +16,7 @@ class medicine_search(QDialog):
         h=homepage()
         widget.close()
 
+
 #screen output
 app = QApplication(sys.argv)
 welcome=medicine_search()

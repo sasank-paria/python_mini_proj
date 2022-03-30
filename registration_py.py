@@ -21,7 +21,8 @@ class registration(QDialog):
     def login_page_open(self):
         from signin_py import signin
         r=signin()
-        widget.close()
+        widget.addWidget(r)
+        widget.setCurrentIndex(widget.currentIndex() + 1)
 
 
     def signup_backend(self):
@@ -39,7 +40,7 @@ class registration(QDialog):
         elif password!=confirmpassword:
             self.register_error_msg_text_field.setText("passwords are not matching!")
         else:
-            pass
+
             conn = sqlite3.connect("python_mini_proj.db")
             cur = conn.cursor()
 
@@ -84,7 +85,3 @@ widget.setFixedHeight(810)
 widget.setFixedWidth(1024)
 widget.show()
 
-try:
-    sys.exit(app.exec_())
-except:
-    print("exiting")
