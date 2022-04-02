@@ -154,6 +154,8 @@ class hospital_finder(QDialog):
         super(hospital_finder,self).__init__()
         uic.loadUi("hospital_finder.ui",self)
         self.hospital_nearme_home_button.clicked.connect(self.gotohome)
+        self.hospital_find_button.clicked.connect(self.hospitalfind)
+
 
     def gotohome(self):
 
@@ -161,6 +163,116 @@ class hospital_finder(QDialog):
         widget.addWidget(h)
         widget.setCurrentIndex(widget.currentIndex() + 1)
 
+
+
+    def hospitalfind(self):
+        #display area details with pincode
+        import json
+
+        import requests
+        pincode=self.pincode_textbar.text()
+        url = "https://pincode.p.rapidapi.com/"
+
+        payload = {
+            "searchBy": "pincode",
+            "value": f"{pincode}"
+        }
+        headers = {
+            "content-type": "application/json",
+            "Content-Type": "application/json",
+            "X-RapidAPI-Host": "pincode.p.rapidapi.com",
+            "X-RapidAPI-Key": "1f62d360a0mshab4da6de118667bp13703cjsn05c591a9a491"
+        }
+
+        response = requests.request("POST", url, json=payload, headers=headers)
+
+        response1 = response.json()
+
+#display this on the ui page of hospital finder
+        pin = response1[0]['pin']
+        region = response1[0]['region']
+        taluka = response1[0]['taluk']
+        district = response1[0]['district']
+        state = response1[0]['circle']
+
+        #will show the nearbuy hospitals
+        import json
+
+        import requests
+
+        url = "https://trueway-places.p.rapidapi.com/FindPlacesNearby"
+
+        querystring = {"location": "19.076090,72.877426", "type": "hospital", "radius": "9000", "language": "en"}
+
+        headers = {
+            "X-RapidAPI-Host": "trueway-places.p.rapidapi.com",
+            "X-RapidAPI-Key": "1f62d360a0mshab4da6de118667bp13703cjsn05c591a9a491"
+        }
+
+        response = requests.request("GET", url, headers=headers, params=querystring)
+
+        response1 = response.json()
+
+        l1_1 = response1['results'][0]['name']
+        l1_2 = response1['results'][0]['address']
+        l1_3 = response1['results'][0]['phone_number']
+        l1_4 = response1['results'][0]['distance']
+
+#variables should be rename further....
+        l2_1 = response1['results'][1]['name']
+        l2_2 = response1['results'][1]['address']
+        l1_3 = response1['results'][1]['phone_number']
+        l1_4 = response1['results'][1]['distance']
+
+        l1_1 = response1['results'][2]['name']
+        l1_2 = response1['results'][2]['address']
+        l1_3 = response1['results'][2]['phone_number']
+        l1_4 = response1['results'][2]['distance']
+
+        l1_1 = response1['results'][3]['name']
+        l1_2 = response1['results'][3]['address']
+        l1_3 = response1['results'][3]['phone_number']
+        l1_4 = response1['results'][3]['distance']
+
+        l1_1 = response1['results'][4]['name']
+        l1_2 = response1['results'][4]['address']
+        l1_3 = response1['results'][4]['phone_number']
+        l1_4 = response1['results'][4]['distance']
+
+        l1_1 = response1['results'][5]['name']
+        l1_2 = response1['results'][5]['address']
+        l1_3 = response1['results'][5]['phone_number']
+        l1_4 = response1['results'][5]['distance']
+
+        l1_1 = response1['results'][6]['name']
+        l1_2 = response1['results'][6]['address']
+        l1_3 = response1['results'][6]['phone_number']
+        l1_4 = response1['results'][6]['distance']
+
+        l1_1 = response1['results'][7]['name']
+        l1_2 = response1['results'][7]['address']
+        l1_3 = response1['results'][7]['phone_number']
+        l1_4 = response1['results'][7]['distance']
+
+        l1_1 = response1['results'][8]['name']
+        l1_2 = response1['results'][8]['address']
+        l1_3 = response1['results'][8]['phone_number']
+        l1_4 = response1['results'][8]['distance']
+
+        l1_1 = response1['results'][9]['name']
+        l1_2 = response1['results'][9]['address']
+        l1_3 = response1['results'][9]['phone_number']
+        l1_4 = response1['results'][9]['distance']
+
+        l1_1 = response1['results'][10]['name']
+        l1_2 = response1['results'][10]['address']
+        l1_3 = response1['results'][10]['phone_number']
+        l1_4 = response1['results'][10]['distance']
+
+        l1_1 = response1['results'][11]['name']
+        l1_2 = response1['results'][11]['address']
+        l1_3 = response1['results'][11]['phone_number']
+        l1_4 = response1['results'][11]['distance']
 
 
 
@@ -194,9 +306,10 @@ class medicine_search(QDialog):
 
         response1 = response.json()
 
-        with open("news.json", "w") as outfile:
-            json.dump(response1, outfile)
+        # with open("news.json", "w") as outfile:
+        #     json.dump(response1, outfile)
 
+        #this labels to be printed on the ui page of medicine search
         label1_1 = response1['results'][0]["title"]
         label1_2 = response1['results'][0]["link"]
         label1_3 = response1['results'][0]["description"]
@@ -225,13 +338,10 @@ class medicine_search(QDialog):
         label7_2 = response1['results'][6]["link"]
         label7_3 = response1['results'][6]["description"]
 
-        label8_1 = response1['results'][7]["title"]
-        label8_2 = response1['results'][7]["link"]
-        label8_3 = response1['results'][7]["description"]
 
-        self.label.setText(label1_1)
-        self.label_3.setText(label1_2)
-        self.label_5.setText(label1_3)
+        self.l1.setText(label1_1)
+        self.l2.setText(f"<a href=\"{label1_2}\">{label1_2}</a>")
+        self.l3.setText(label1_3)
 
 
 

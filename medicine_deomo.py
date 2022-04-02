@@ -1,7 +1,7 @@
 import requests
 import json
-query=self.search_midicine_textbar.text()
-url = f"https://google-search3.p.rapidapi.com/api/v1/search/q={query} +buy online +netmeds+pharmeasy+1mg"
+#query=self.search_midicine_textbar.text()
+url = f"https://google-search3.p.rapidapi.com/api/v1/search/q= +buy online +netmeds+pharmeasy+1mg"
 
 headers = {
 	"X-User-Agent": "desktop",
@@ -51,4 +51,4 @@ label8_1=response1['results'][7]["title"]
 label8_2=response1['results'][7]["link"]
 label8_3=response1['results'][7]["description"]
 
-self.label.setText(label1_1)
+print(label1_2)
