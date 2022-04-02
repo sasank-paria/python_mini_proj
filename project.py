@@ -212,7 +212,7 @@ class hospital_finder(QDialog):
         response = requests.request("GET", url, headers=headers, params=querystring)
 
         response1 = response.json()
-
+#this should be printed ob labels of ui page
         l1_1 = response1['results'][0]['name']
         l1_2 = response1['results'][0]['address']
         l1_3 = response1['results'][0]['phone_number']
