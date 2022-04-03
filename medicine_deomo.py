@@ -14,7 +14,7 @@ response = requests.request("GET", url, headers=headers)
 
 response1=response.json()
 
-with open("news.json", "w") as outfile:
+with open("medicinesearch.json", "w") as outfile:
     json.dump(response1, outfile)
 
 
