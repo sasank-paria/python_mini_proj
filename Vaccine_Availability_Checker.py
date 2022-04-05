@@ -18,13 +18,13 @@ app.geometry("700x480+600+300")
 app.title(f"Vaccine Availability Checker")
 app.iconbitmap("Images_Icons\covid-vaccine.ico")
 app.resizable(False, True)
-app.config(background = '#c471ed')
+app.config(background = '#a8c0ff')
 
 ## DEFAULT values
 PINCODE = '110096'
 
 # Color value reference
-top_right_frame_bg = '#867ae9'
+top_right_frame_bg = '#0b95f5'
 
 # Frame details
 frame1 = Frame(app, height = 120, width=180, bg= top_right_frame_bg, bd=1, relief = FLAT)
@@ -60,30 +60,30 @@ label_head_result.place(x=10, y=125)
 
 # Entry boxes
 pincode_text_var = StringVar()
-pincode_textbox = Entry(app,width = 11, bg = '#ffffff', fg= 'black', textvariable = pincode_text_var, font='TimesRoman 11')
+pincode_textbox = Entry(app,width = 11, bg = 'white', fg= 'black', textvariable = pincode_text_var, font='TimesRoman 11')
 pincode_textbox['textvariable'] = pincode_text_var
 pincode_textbox.place(x= 220, y=40)
 
 date_text_var = StringVar()
-date_textbox = Entry(app,width = 12, bg = '#ffffff', fg= 'black', textvariable = date_text_var, font='TimesRoman 10')
+date_textbox = Entry(app,width = 12, bg = 'white', fg= 'black', textvariable = date_text_var, font='TimesRoman 10')
 date_textbox['textvariable'] = date_text_var
 date_textbox.place(x= 380, y=40)
 
 
 ## TEXT BOX - for RESULTs
-result_box_avl = Text(app, height = 20, width = 8, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_avl = Text(app, height = 20, width = 8, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_avl.place(x= 3 , y= 152)
-result_box_cent = Text(app, height = 20, width = 30, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_cent = Text(app, height = 20, width = 30, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_cent.place(x= 75 , y= 152)
-result_box_age = Text(app, height = 20, width = 8, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_age = Text(app, height = 20, width = 8, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_age.place(x= 330 , y= 152)
-result_box_vacc = Text(app, height = 20, width = 10, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_vacc = Text(app, height = 20, width = 10, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_vacc.place(x= 400 , y= 152)
-result_box_D1 = Text(app, height = 20, width = 7, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_D1 = Text(app, height = 20, width = 7, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_D1.place(x= 490 , y= 152)
-result_box_D2 = Text(app, height = 20, width = 7, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_D2 = Text(app, height = 20, width = 7, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_D2.place(x= 555 , y= 152)
-result_box_D1_D2 = Text(app, height = 20, width = 7, bg='#c471ed',fg='black', relief=FLAT, font='verdana 10')
+result_box_D1_D2 = Text(app, height = 20, width = 7, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
 result_box_D1_D2.place(x= 630 , y= 152)
 
 
