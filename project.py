@@ -1,4 +1,6 @@
 import sys
+import textwrap
+
 from PyQt5 import uic
 from PyQt5 import QtWidgets,uic
 from PyQt5.QtWidgets import QDialog, QApplication, QWidget, QStackedWidget, QLabel, QMainWindow
@@ -274,6 +276,7 @@ class hospital_finder(QDialog):
         l1_3 = response1['results'][11]['phone_number']
         l1_4 = response1['results'][11]['distance']
 
+        self.labelkanaam.setText(textwrap.fill(l2_1))
 
 
 class medicine_search(QDialog):
