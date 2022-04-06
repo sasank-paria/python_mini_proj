@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1370</width>
-    <height>893</height>
+    <width>1802</width>
+    <height>945</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,8 +42,8 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
-         <width>1325</width>
+         <y>-2925</y>
+         <width>1757</width>
          <height>3800</height>
         </rect>
        </property>
@@ -92,8 +92,8 @@ color: rgb(255, 255, 255);</string>
        <widget class="QLabel" name="label_3">
         <property name="geometry">
          <rect>
-          <x>-20</x>
-          <y>240</y>
+          <x>-10</x>
+          <y>190</y>
           <width>1961</width>
           <height>421</height>
          </rect>
@@ -853,7 +853,7 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_50">
         <property name="geometry">
          <rect>
-          <x>30</x>
+          <x>40</x>
           <y>270</y>
           <width>111</width>
           <height>101</height>
@@ -866,7 +866,7 @@ background-color: rgb(219, 247, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/hmpg.jpg</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -875,7 +875,7 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_52">
         <property name="geometry">
          <rect>
-          <x>850</x>
+          <x>1180</x>
           <y>680</y>
           <width>281</width>
           <height>181</height>
@@ -888,7 +888,10 @@ background-color: rgb(219, 247, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/hmpg1.jpg</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg1.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label_49">
@@ -916,10 +919,10 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_51">
         <property name="geometry">
          <rect>
-          <x>780</x>
-          <y>1380</y>
-          <width>411</width>
-          <height>211</height>
+          <x>1100</x>
+          <y>1320</y>
+          <width>501</width>
+          <height>301</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -929,7 +932,7 @@ background-color: rgb(219, 247, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/hmpg2.jpg</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg2.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -938,7 +941,7 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_53">
         <property name="geometry">
          <rect>
-          <x>770</x>
+          <x>1120</x>
           <y>900</y>
           <width>431</width>
           <height>261</height>
@@ -951,7 +954,7 @@ background-color: rgb(219, 247, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/hmpg3.jpg</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg3.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -960,10 +963,10 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_54">
         <property name="geometry">
          <rect>
-          <x>860</x>
-          <y>2480</y>
-          <width>281</width>
-          <height>281</height>
+          <x>1190</x>
+          <y>2390</y>
+          <width>331</width>
+          <height>291</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -973,7 +976,7 @@ background-color: rgb(219, 247, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/hmpg4.png</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg4.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -982,10 +985,10 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_55">
         <property name="geometry">
          <rect>
-          <x>810</x>
-          <y>1960</y>
-          <width>381</width>
-          <height>271</height>
+          <x>1130</x>
+          <y>1850</y>
+          <width>461</width>
+          <height>341</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -995,7 +998,7 @@ background-color: rgb(219, 247, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/hmpg5.jpg</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg5.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1186,24 +1189,6 @@ color: rgb(0, 0, 0);</string>
          <rect>
           <x>650</x>
           <y>60</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 16pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_65">
-        <property name="geometry">
-         <rect>
-          <x>1680</x>
-          <y>1110</y>
           <width>201</width>
           <height>41</height>
          </rect>
