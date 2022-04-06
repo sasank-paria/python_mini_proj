@@ -42,7 +42,7 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-2925</y>
+         <y>0</y>
          <width>1757</width>
          <height>3800</height>
         </rect>
@@ -860,7 +860,7 @@ background-color: rgb(219, 247, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/hmpg.jpg);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -882,7 +882,7 @@ background-color: rgb(219, 247, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/hmpg1.jpg);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg1.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -926,7 +926,7 @@ background-color: rgb(219, 247, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/hmpg2.jpg);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg2.jpg);</string>
         </property>
         <property name="text">
          <string/>
@@ -948,7 +948,7 @@ background-color: rgb(219, 247, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/hmpg3.jpg);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg3.jpg)</string>
         </property>
         <property name="text">
          <string/>
@@ -970,7 +970,7 @@ background-color: rgb(219, 247, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/hmpg4.png);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg4.png);</string>
         </property>
         <property name="text">
          <string/>
@@ -992,7 +992,7 @@ background-color: rgb(219, 247, 255);</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/hmpg5.jpg);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg5.jpg);</string>
         </property>
         <property name="text">
          <string/>
