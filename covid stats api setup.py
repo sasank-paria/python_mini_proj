@@ -18,6 +18,7 @@ response1=response.json()
 with open("coviddata.json","w") as file:
     json.dump(response1,file)
 
+print(response1)
 p1=response1['response'][0]['country']
 p2=response1['response'][0]['population']
 p3=response1['response'][0]['cases']['active']

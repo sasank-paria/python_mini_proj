@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1311</width>
-    <height>893</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,8 +42,8 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-2977</y>
-         <width>1266</width>
+         <y>0</y>
+         <width>1875</width>
          <height>3800</height>
         </rect>
        </property>
@@ -58,7 +58,7 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1361</width>
+          <width>1931</width>
           <height>41</height>
          </rect>
         </property>
@@ -78,7 +78,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>0</x>
           <y>40</y>
-          <width>1341</width>
+          <width>1931</width>
           <height>151</height>
          </rect>
         </property>
@@ -94,7 +94,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>-20</x>
           <y>190</y>
-          <width>1341</width>
+          <width>1961</width>
           <height>471</height>
          </rect>
         </property>
@@ -113,7 +113,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>-60</x>
           <y>660</y>
-          <width>1331</width>
+          <width>1991</width>
           <height>521</height>
          </rect>
         </property>
@@ -129,7 +129,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>0</x>
           <y>1180</y>
-          <width>1331</width>
+          <width>1931</width>
           <height>621</height>
          </rect>
         </property>
@@ -145,7 +145,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>0</x>
           <y>1800</y>
-          <width>1331</width>
+          <width>1931</width>
           <height>571</height>
          </rect>
         </property>
@@ -161,8 +161,8 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>0</x>
           <y>2350</y>
-          <width>1331</width>
-          <height>571</height>
+          <width>6</width>
+          <height>16</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -177,7 +177,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>0</x>
           <y>2920</y>
-          <width>1331</width>
+          <width>1931</width>
           <height>591</height>
          </rect>
         </property>
@@ -193,7 +193,7 @@ color: rgb(255, 255, 255);</string>
          <rect>
           <x>0</x>
           <y>3510</y>
-          <width>1331</width>
+          <width>1941</width>
           <height>391</height>
          </rect>
         </property>
@@ -850,42 +850,6 @@ background-color: rgb(219, 247, 255);</string>
          <string>COVID19 GRAPH</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_47">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>50</y>
-          <width>1271</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(3, 148, 245);
-font: 10pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Now book your vaccination appointment, schedule your routine check-ups and get live updates regarding health and covid19</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_48">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>90</y>
-          <width>1271</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(3, 148, 245);
-font: 10pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>by simply following the steps given below.</string>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_50">
         <property name="geometry">
          <rect>
@@ -902,7 +866,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="registration_img.qrc">:/newPrefix/Downloads/hmpg.jpg</pixmap>
+         <pixmap>:/newPrefix/Downloads/hmpg.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -924,7 +888,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="homepageimg.qrc">:/newPrefix/Downloads/hmpg1.jpg</pixmap>
+         <pixmap>:/newPrefix/Downloads/hmpg1.jpg</pixmap>
         </property>
        </widget>
        <widget class="QLabel" name="label_49">
@@ -943,7 +907,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="homepageimg.qrc">:/newPrefix/Downloads/nm.jpg</pixmap>
+         <pixmap>:/newPrefix/Downloads/nm.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -965,7 +929,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="homepageimg.qrc">:/newPrefix/Downloads/hmpg2.jpg</pixmap>
+         <pixmap>:/newPrefix/Downloads/hmpg2.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -987,7 +951,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="homepageimg.qrc">:/newPrefix/Downloads/hmpg3.jpg</pixmap>
+         <pixmap>:/newPrefix/Downloads/hmpg3.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1009,7 +973,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="homepageimg.qrc">:/newPrefix/Downloads/hmpg4.png</pixmap>
+         <pixmap>:/newPrefix/Downloads/hmpg4.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1031,7 +995,7 @@ color: rgb(255, 255, 255);</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="homepageimg.qrc">:/newPrefix/Downloads/hmpg5.jpg</pixmap>
+         <pixmap>:/newPrefix/Downloads/hmpg5.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
