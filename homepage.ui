@@ -93,9 +93,9 @@ color: rgb(255, 255, 255);</string>
         <property name="geometry">
          <rect>
           <x>-20</x>
-          <y>190</y>
+          <y>240</y>
           <width>1961</width>
-          <height>471</height>
+          <height>421</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -175,9 +175,9 @@ color: rgb(255, 255, 255);</string>
        <widget class="QLabel" name="label_8">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>2920</y>
-          <width>1931</width>
+          <x>-120</x>
+          <y>2720</y>
+          <width>2051</width>
           <height>591</height>
          </rect>
         </property>
@@ -458,18 +458,18 @@ color: rgb(255, 255, 255);</string>
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>670</y>
+          <y>660</y>
           <width>641</width>
-          <height>61</height>
+          <height>71</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(219, 247, 255);
 color: rgb(0, 0, 127);
-font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;ROUTINE CHECK-UPS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;find hospital near you&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_17">
@@ -559,7 +559,7 @@ background-color: rgb(0, 0, 127);
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>BOOK APPOINTMENT</string>
+         <string>search hospital</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_31">
@@ -999,6 +999,474 @@ background-color: rgb(219, 247, 255);</string>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>2980</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>3080</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>3190</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_57">
+        <property name="geometry">
+         <rect>
+          <x>1680</x>
+          <y>1550</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>1680</x>
+          <y>1450</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_59">
+        <property name="geometry">
+         <rect>
+          <x>1680</x>
+          <y>1460</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>1680</x>
+          <y>1610</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>1680</x>
+          <y>1250</y>
+          <width>201</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l1">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l2">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l3">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>1680</x>
+          <y>1110</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l4">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l5">
+        <property name="geometry">
+         <rect>
+          <x>1080</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l6">
+        <property name="geometry">
+         <rect>
+          <x>1080</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l7">
+        <property name="geometry">
+         <rect>
+          <x>1510</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l8">
+        <property name="geometry">
+         <rect>
+          <x>1510</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_71">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>country</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_72">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>population</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_73">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>active</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_74">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>critical</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_75">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>recovered</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_76">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>total cases</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_77">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>total deaths</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_78">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>120</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>day and time</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l9">
+        <property name="geometry">
+         <rect>
+          <x>1730</x>
+          <y>70</y>
+          <width>131</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 16pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
         </property>
        </widget>
       </widget>

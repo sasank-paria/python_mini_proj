@@ -29,12 +29,12 @@ p7=response1['response'][0]['deaths']['total']
 p8=response1['response'][0]['day']
 p9=response1['response'][0]['time']
 
-print(p1)
-print(p2)
-print(p3)
-print(p4)
-print(p5)
-print(p6)
-print(p7)
-print(p8)
-print(p9)
+self.l1.setText(p1)
+self.l2.setText(p2)
+self.l3.setText(p3)
+self.l4.setText(p4)
+self.l5.setText(p5)
+self.l6.setText(p6)
+self.l7.setText(p7)
+self.l8.setText(p8)
+self.l9.setText(p9)
