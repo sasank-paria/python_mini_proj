@@ -15,13 +15,13 @@ app = Tk()
 
 # App Geometry and components
 app.geometry("700x480+600+300")
-app.title(f"Vaccine Availability Checker")
-app.iconbitmap("Images_Icons\covid-vaccine.ico")
+app.title(f"Health management app")
+#app.iconbitmap("Images_Icons\covid-vaccine.ico")
 app.resizable(False, True)
-app.config(background = '#a8c0ff')
+app.config(background = '#ffffff')
 
 ## DEFAULT values
-PINCODE = '110096'
+PINCODE = '400001'
 
 # Color value reference
 top_right_frame_bg = '#0b95f5'
@@ -33,7 +33,7 @@ frame1.place(x=0,y=0)
 frame2 = Frame(app, height = 120, width=520, bg= top_right_frame_bg, bd=1, relief = FLAT)
 frame2.place(x=180,y=0)
 
-frame3 = Frame(app, height = 30, width=700, bg= '#867ae9', bd=1, relief = RAISED)
+frame3 = Frame(app, height = 30, width=700, bg= '#1270a6', bd=1, relief = RAISED)
 frame3.place(x=0,y=120)
 
 # Labels
@@ -55,7 +55,7 @@ label_dateformat.place(x=420, y=18)
 label_search_vacc = Label(text="Search \nAvailable Vaccine", bg = top_right_frame_bg, font = 'TimesRoman 8')
 label_search_vacc.place(x=570, y=70)
 
-label_head_result = Label(text=" Status       \tCentre-Name\t              Age-Group    Vaccine       Dose_1     Dose_2     Total", bg = '#867ae9', fg='black', font = 'Verdana 8 bold')
+label_head_result = Label(text=" Status       \tCentre-Name\t              Age-Group    Vaccine       Dose_1     Dose_2     Total", bg = '#1270a6', fg='black', font = 'Verdana 8 bold')
 label_head_result.place(x=10, y=125)
 
 # Entry boxes
@@ -71,19 +71,19 @@ date_textbox.place(x= 380, y=40)
 
 
 ## TEXT BOX - for RESULTs
-result_box_avl = Text(app, height = 20, width = 8, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_avl = Text(app, height = 20, width = 8, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 10')
 result_box_avl.place(x= 3 , y= 152)
-result_box_cent = Text(app, height = 20, width = 30, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_cent = Text(app, height = 20, width = 30, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 10')
 result_box_cent.place(x= 75 , y= 152)
-result_box_age = Text(app, height = 20, width = 8, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_age = Text(app, height = 20, width = 8, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 10')
 result_box_age.place(x= 330 , y= 152)
-result_box_vacc = Text(app, height = 20, width = 10, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_vacc = Text(app, height = 20, width = 10, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 8')
 result_box_vacc.place(x= 400 , y= 152)
-result_box_D1 = Text(app, height = 20, width = 7, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_D1 = Text(app, height = 20, width = 7, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 10')
 result_box_D1.place(x= 490 , y= 152)
-result_box_D2 = Text(app, height = 20, width = 7, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_D2 = Text(app, height = 20, width = 7, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 10')
 result_box_D2.place(x= 555 , y= 152)
-result_box_D1_D2 = Text(app, height = 20, width = 7, bg='#a8c0ff',fg='black', relief=FLAT, font='verdana 10')
+result_box_D1_D2 = Text(app, height = 20, width = 7, bg='#ffffff',fg='black', relief=FLAT, font='Sans-serif 10')
 result_box_D1_D2.place(x= 630 , y= 152)
 
 
@@ -113,7 +113,7 @@ def update_clock():
 def insert_today_date():
     formatted_now = update_clock()
     date_text_var.set(formatted_now)
-    tomorrow_date_chkbox['state'] = DISABLED
+   # tomorrow_date_chkbox['state'] = DISABLED
 
 def refresh_api_call(PINCODE, DATE):
     header = {'User-Agent': 'Chrome/84.0.4147.105 Safari/537.36'}
@@ -155,7 +155,7 @@ def search_vaccine_avl():
                 curr_status = 'Available'
             else:
                 curr_status = 'NA'
-            
+
             if age_limit == 45:
                 age_grp = '45+'
             else:
@@ -203,14 +203,14 @@ curr_loc_var = StringVar()
 radio_location = Radiobutton(app, text="Current location", bg= top_right_frame_bg, variable= curr_loc_var, value = curr_loc_var, command = fill_pincode_with_radio) #state=DISABLED
 radio_location.place(x=215, y=65)
 
-# Check Box 
+# Check Box
 chkbox_today_var = IntVar()
 today_date_chkbox = Checkbutton(app, text='Today', bg= top_right_frame_bg, variable=chkbox_today_var, onvalue= 1, offvalue=0, command = insert_today_date)
 today_date_chkbox.place(x= 375, y= 65)
 
-chkbox_tomorrow_var = IntVar()
-tomorrow_date_chkbox = Checkbutton(app, text='Tomorrow', bg= top_right_frame_bg, variable=chkbox_tomorrow_var, onvalue= 1, offvalue=0, state = DISABLED)
-tomorrow_date_chkbox.place(x= 435, y= 65)
+# chkbox_tomorrow_var = IntVar()
+# tomorrow_date_chkbox = Checkbutton(app, text='Tomorrow', bg= top_right_frame_bg, variable=chkbox_tomorrow_var, onvalue= 1, offvalue=0, state = DISABLED)
+# tomorrow_date_chkbox.place(x= 435, y= 65)
 
 update_clock()
 

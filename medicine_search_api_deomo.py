@@ -1,3 +1,5 @@
+#done with the ui connection with the main project
+
 import requests
 import json
 #query=self.search_midicine_textbar.text()

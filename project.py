@@ -131,6 +131,7 @@ class homepage(QMainWindow):
         self.hospital_finder.clicked.connect(self.gotohospital)
         self.medicine_search.clicked.connect(self.gotomedicine)
 
+
         #covid data cases display
 
         import json
@@ -183,10 +184,12 @@ class homepage(QMainWindow):
 
 
     def gotoslotfinder(self):
+        import Vaccine_Availability_Checker
 
-            v=vaccine_slot_finder()
-            widget.addWidget(v)
-            widget.setCurrentIndex(widget.currentIndex() + 1)
+
+
+
+
 
     def gotomedicine(self):
 

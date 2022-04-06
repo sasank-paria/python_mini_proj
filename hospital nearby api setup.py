@@ -1,3 +1,5 @@
+#done with the ui connection with the main projecct
+
 import json
 import textwrap
 
