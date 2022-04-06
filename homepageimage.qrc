@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>hmpg.jpg</file>
+    <file>hmpg1.jpg</file>
+    <file>hmpg2.jpg</file>
+    <file>hmpg3.jpg</file>
+    <file>hmpg4.png</file>
+    <file>hmpg5.jpg</file>
+    <file>hmpg6.jpg</file>
+  </qresource>
+</RCC>

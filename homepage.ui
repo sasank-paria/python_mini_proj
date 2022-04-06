@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1370</width>
+    <height>893</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,7 +43,7 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1875</width>
+         <width>1325</width>
          <height>3800</height>
         </rect>
        </property>
@@ -896,18 +896,18 @@ background-color: rgb(219, 247, 255);</string>
          <rect>
           <x>690</x>
           <y>210</y>
-          <width>331</width>
-          <height>231</height>
+          <width>381</width>
+          <height>251</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-image: url(:/newPrefix/Downloads/nm.jpg);</string>
+         <string notr="true">background-image: url(:/newPrefix/hmpg6.jpg);</string>
         </property>
         <property name="text">
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/newPrefix/Downloads/nm.jpg</pixmap>
+         <pixmap resource="homepageimage.qrc">:/newPrefix/hmpg6.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1477,8 +1477,7 @@ color: rgb(0, 0, 0);</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="registration_img.qrc"/>
-  <include location="homepageimg.qrc"/>
+  <include location="homepageimage.qrc"/>
  </resources>
  <connections/>
 </ui>
