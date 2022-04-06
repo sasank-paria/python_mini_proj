@@ -1,5 +1,6 @@
 import json
 
+import pandas
 import requests
 
 url = "https://covid-193.p.rapidapi.com/statistics"
@@ -29,12 +30,33 @@ p7=response1['response'][0]['deaths']['total']
 p8=response1['response'][0]['day']
 p9=response1['response'][0]['time']
 
-self.l1.setText(p1)
-self.l2.setText(p2)
-self.l3.setText(p3)
-self.l4.setText(p4)
-self.l5.setText(p5)
-self.l6.setText(p6)
-self.l7.setText(p7)
-self.l8.setText(p8)
-self.l9.setText(p9)
+# self.l1.setText(p1)
+# self.l2.setText(p2)
+# self.l3.setText(p3)
+# self.l4.setText(p4)
+# self.l5.setText(p5)
+# self.l6.setText(p6)
+# self.l7.setText(p7)
+# self.l8.setText(p8)
+# self.l9.setText(p9)
+
+data=pandas.Series(response1)
+print(data)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([p7, p5, p4, p3])
+mylabels = ["deaths", "recovered", "critical", "active"]
+
+plt.pie(y, labels = mylabels)
+
+plt.show()
+
+
+
+x = np.array(["deaths", "recovered", "critical", "active"])
+y = np.array([p7, p5, p4, p3])
+
+plt.bar(x,y)
+plt.show()

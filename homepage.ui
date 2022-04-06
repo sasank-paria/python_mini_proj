@@ -1454,9 +1454,9 @@ color: rgb(0, 0, 0);</string>
        <widget class="QLabel" name="l9">
         <property name="geometry">
          <rect>
-          <x>1730</x>
-          <y>70</y>
-          <width>131</width>
+          <x>1720</x>
+          <y>60</y>
+          <width>151</width>
           <height>91</height>
          </rect>
         </property>
@@ -1467,6 +1467,60 @@ color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="get_vaccinated_2">
+        <property name="geometry">
+         <rect>
+          <x>1630</x>
+          <y>1340</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(33, 151, 255);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>GET VACCINATED</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="get_vaccinated_3">
+        <property name="geometry">
+         <rect>
+          <x>1630</x>
+          <y>1270</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(33, 151, 255);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>GET VACCINATED</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="get_vaccinated_4">
+        <property name="geometry">
+         <rect>
+          <x>1630</x>
+          <y>1440</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(33, 151, 255);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>GET VACCINATED</string>
         </property>
        </widget>
       </widget>

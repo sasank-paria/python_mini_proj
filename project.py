@@ -154,15 +154,15 @@ class homepage(QMainWindow):
         #     json.dump(response1, file)
         #
         # print(response1)
-        p1 = response1['response'][0]['country']
-        p2 = response1['response'][0]['population']
-        p3 = response1['response'][0]['cases']['active']
-        p4 = response1['response'][0]['cases']['critical']
-        p5 = response1['response'][0]['cases']['recovered']
-        p6 = response1['response'][0]['cases']['total']
-        p7 = response1['response'][0]['deaths']['total']
-        p8 = response1['response'][0]['day']
-        p9 = response1['response'][0]['time']
+        p1 = str(response1['response'][0]['country'])
+        p2 = str(response1['response'][0]['population'])
+        p3 = str(response1['response'][0]['cases']['active'])
+        p4 = str(response1['response'][0]['cases']['critical'])
+        p5 = str(response1['response'][0]['cases']['recovered'])
+        p6 = str(response1['response'][0]['cases']['total'])
+        p7 = str(response1['response'][0]['deaths']['total'])
+        p8 = str(response1['response'][0]['day'])
+        p9 = str(response1['response'][0]['time'])
 
         self.l1.setText(p1)
         self.l2.setText(p2)
@@ -173,6 +173,7 @@ class homepage(QMainWindow):
         self.l7.setText(p7)
         self.l8.setText(p8)
         self.l9.setText(p9)
+
 
     def gotohospital(self):
 
