@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1024</width>
-    <height>810</height>
+    <width>1007</width>
+    <height>761</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,13 +31,15 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727,
     <property name="geometry">
      <rect>
       <x>520</x>
-      <y>100</y>
+      <y>80</y>
       <width>461</width>
-      <height>661</height>
+      <height>681</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255); </string>
+     <string notr="true">Border-radius:15px;
+
+background-color: rgb(255, 255, 255); </string>
     </property>
     <property name="text">
      <string/>
@@ -57,7 +59,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727,
 color:rgb(45, 169, 203)</string>
     </property>
     <property name="text">
-     <string>register</string>
+     <string> Register</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="reg_user_name_field">
@@ -70,13 +72,14 @@ color:rgb(45, 169, 203)</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
+     <string notr="true">Border-radius:10px;
+
 font: 75 12pt &quot;MS Sans Serif&quot;;
 
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>USER NAME</string>
+     <string> USER NAME</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="reg_password_field">
@@ -89,11 +92,13 @@ background-color: rgb(229, 250, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true"> font: 75 12pt &quot;MS Sans Serif&quot;;
+     <string notr="true">Border-radius:10px;
+
+ font: 75 12pt &quot;MS Sans Serif&quot;;
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>PASSWORD</string>
+     <string> PASSWORD</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="reg_confirmedpassword_field">
@@ -106,11 +111,13 @@ background-color: rgb(229, 250, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;MS Sans Serif&quot;;
+     <string notr="true">Border-radius:10px;
+
+font: 75 12pt &quot;MS Sans Serif&quot;;
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>CONFIRM PASSWORD</string>
+     <string> CONFIRM PASSWORD</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="reg_emailid_field">
@@ -123,11 +130,13 @@ background-color: rgb(229, 250, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;MS Sans Serif&quot;;
+     <string notr="true">Border-radius:10px;
+
+font: 75 12pt &quot;MS Sans Serif&quot;;
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>EMAIL ID</string>
+     <string> EMAIL ID</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="reg_mobileno_field">
@@ -140,11 +149,13 @@ background-color: rgb(229, 250, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;MS Sans Serif&quot;;
+     <string notr="true">Border-radius:10px;
+
+font: 75 12pt &quot;MS Sans Serif&quot;;
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>MOBILE NO.</string>
+     <string> MOBILE NO.</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="reg_resaddress_field">
@@ -157,11 +168,13 @@ background-color: rgb(229, 250, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;MS Sans Serif&quot;;
+     <string notr="true">Border-radius:10px;
+
+font: 75 12pt &quot;MS Sans Serif&quot;;
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>RESIDENTIAL ADDRESS</string>
+     <string> RESIDENTIAL ADDRESS</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="reg_pincode_field">
@@ -174,11 +187,13 @@ background-color: rgb(229, 250, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;MS Sans Serif&quot;;
+     <string notr="true">Border-radius:10px;
+
+font: 75 12pt &quot;MS Sans Serif&quot;;
 background-color: rgb(229, 250, 255);</string>
     </property>
     <property name="placeholderText">
-     <string>PINCODE</string>
+     <string> PINCODE</string>
     </property>
    </widget>
    <widget class="QPushButton" name="signup_button">
@@ -202,11 +217,12 @@ QPushButton:hover {
 };
 
 color:rgb(255, 255, 255);
+Border-radius:10px;
 
 font: 75 15pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
-     <string>register</string>
+     <string>Register</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -292,11 +308,12 @@ QPushButton:hover {
 };
 
 color:rgb(255, 255, 255);
+Border-radius:10px;
 
 font: 75 15pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
-     <string>signin</string>
+     <string>Sign In</string>
     </property>
    </widget>
   </widget>
