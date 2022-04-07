@@ -21,7 +21,7 @@ response1=response.json()
 # with open("coviddata.json","w") as file:
 #     json.dump(response1,file)
 
-print(response1)
+# print(response1)
 p1=response1['response'][0]['country']
 p2=response1['response'][0]['population']
 p3=response1['response'][0]['cases']['active']
@@ -43,7 +43,7 @@ p9=response1['response'][0]['time']
 # self.l9.setText(p9)
 
 data=pandas.Series(response1)
-print(data)
+# print(data)
 
 import matplotlib.pyplot as plt
 import numpy as np
