@@ -392,14 +392,42 @@ class medicine_search(QDialog):
         label6_2 = response1['results'][5]["link"]
         label6_3 = response1['results'][5]["description"]
 
-        label7_1 = response1['results'][6]["title"]
+        '''label7_1 = response1['results'][6]["title"]
         label7_2 = response1['results'][6]["link"]
-        label7_3 = response1['results'][6]["description"]
+        label7_3 = response1['results'][6]["description"]'''
+
+        self.l1_10.setText(label1_1)
+        self.l2_9.setText(f"<a href=\"{label1_2}\">{label1_2}</a>")
+        self.l1_8.setText(label1_3)
+
+        self.label1_18.setText(label2_1)
+        self.label1_17.setText(f"<a href=\"{label2_2}\">{label2_2}</a>")
+        self.label1_16.setText(label2_3)
+
+        self.label1_7.setText(label3_1)
+        self.label1_6.setText(f"<a href=\"{label3_2}\">{label3_2}</a>")
+        self.label1_5.setText(label3_3)
+
+        self.label1_15.setText(label4_1)
+        self.label1_14.setText(f"<a href=\"{label4_2}\">{label4_2}</a>")
+        self.label1_13.setText(label4_3)
+
+        self.l3.setText(label5_1)
+        self.l2.setText(f"<a href=\"{label5_2}\">{label5_2}</a>")
+        self.l1.setText(label5_3)
+
+        self.label1_12.setText(label6_1)
+        self.label1_11.setText(f"<a href=\"{label6_2}\">{label6_2}</a>")
+        self.label1_2.setText(label6_3)
 
 
-        self.l1.setText(label1_1)
-        self.l2.setText(f"<a href=\"{label1_2}\">{label1_2}</a>")
-        self.l3.setText(label1_3)
+
+
+
+
+
+
+
 
 
 class news(QMainWindow):
