@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1916</width>
-    <height>3000</height>
+    <width>1708</width>
+    <height>1438</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,10 +41,10 @@
       <widget class="QWidget" name="scrollAreaWidgetContents">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>-244</x>
          <y>0</y>
          <width>1920</width>
-         <height>2929</height>
+         <height>2500</height>
         </rect>
        </property>
        <property name="minimumSize">
@@ -92,12 +92,12 @@ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.994318, stop
 QWidget#widget{
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727, stop:0.243781 rgba(83, 187, 255, 255), stop:1 rgba(255, 179, 249, 255))};</string>
         </property>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="la_2">
          <property name="geometry">
           <rect>
            <x>20</x>
            <y>100</y>
-           <width>801</width>
+           <width>911</width>
            <height>31</height>
           </rect>
          </property>
@@ -105,12 +105,12 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727,
           <string/>
          </property>
         </widget>
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="la_3">
          <property name="geometry">
           <rect>
            <x>20</x>
            <y>130</y>
-           <width>691</width>
+           <width>911</width>
            <height>111</height>
           </rect>
          </property>
@@ -118,12 +118,12 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727,
           <string/>
          </property>
         </widget>
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="la_4">
          <property name="geometry">
           <rect>
            <x>20</x>
            <y>240</y>
-           <width>691</width>
+           <width>911</width>
            <height>31</height>
           </rect>
          </property>
@@ -131,12 +131,587 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.652, y2:0.897727,
           <string/>
          </property>
         </widget>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="la_5">
          <property name="geometry">
           <rect>
            <x>20</x>
            <y>270</y>
-           <width>691</width>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_6">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>100</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_7">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>130</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>240</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>270</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_10">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>310</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_11">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>340</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_12">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>450</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_13">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>480</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_14">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>310</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_15">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>340</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_16">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>450</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_17">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>480</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_18">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>520</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_19">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>550</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_20">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>660</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_21">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>690</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_22">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>520</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_23">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>550</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_24">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>660</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_25">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>690</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_26">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>730</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_27">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>760</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_28">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>870</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_29">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>900</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_30">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>730</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_31">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>760</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_32">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>870</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_33">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>900</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_34">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>940</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_35">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>970</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_36">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>1080</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_37">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>1110</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_38">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>940</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_39">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>970</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_40">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>1080</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_41">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>1110</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_42">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>1150</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_43">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>1180</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_44">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>1290</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_45">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>1320</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_46">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>1150</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_47">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>1180</y>
+           <width>911</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="la_48">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>1290</y>
+           <width>911</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="l_49">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>1320</y>
+           <width>911</width>
            <height>31</height>
           </rect>
          </property>

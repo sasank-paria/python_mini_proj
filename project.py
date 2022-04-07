@@ -342,60 +342,122 @@ class hospital_finder(QDialog):
 #variables should be rename further....
         l2_1 = response1['results'][1]['name']
         l2_2 = response1['results'][1]['address']
-        l1_3 = response1['results'][1]['phone_number']
-        l1_4 = response1['results'][1]['distance']
+        l2_3 = response1['results'][1]['phone_number']
+        l2_4 = response1['results'][1]['distance']
 
-        l1_1 = response1['results'][2]['name']
-        l1_2 = response1['results'][2]['address']
-        l1_3 = response1['results'][2]['phone_number']
-        l1_4 = response1['results'][2]['distance']
+        l3_1 = response1['results'][2]['name']
+        l3_2 = response1['results'][2]['address']
+        l3_3 = response1['results'][2]['phone_number']
+        l3_4 = response1['results'][2]['distance']
 
-        l1_1 = response1['results'][3]['name']
-        l1_2 = response1['results'][3]['address']
-        l1_3 = response1['results'][3]['phone_number']
-        l1_4 = response1['results'][3]['distance']
+        l4_1 = response1['results'][3]['name']
+        l4_2 = response1['results'][3]['address']
+        l4_3 = response1['results'][3]['phone_number']
+        l4_4 = response1['results'][3]['distance']
 
-        l1_1 = response1['results'][4]['name']
-        l1_2 = response1['results'][4]['address']
-        l1_3 = response1['results'][4]['phone_number']
-        l1_4 = response1['results'][4]['distance']
+        l5_1 = response1['results'][4]['name']
+        l5_2 = response1['results'][4]['address']
+        l5_3 = response1['results'][4]['phone_number']
+        l5_4 = response1['results'][4]['distance']
 
-        l1_1 = response1['results'][5]['name']
-        l1_2 = response1['results'][5]['address']
-        l1_3 = response1['results'][5]['phone_number']
-        l1_4 = response1['results'][5]['distance']
+        l6_1 = response1['results'][5]['name']
+        l6_2 = response1['results'][5]['address']
+        l6_3 = response1['results'][5]['phone_number']
+        l6_4 = response1['results'][5]['distance']
 
-        l1_1 = response1['results'][6]['name']
-        l1_2 = response1['results'][6]['address']
-        l1_3 = response1['results'][6]['phone_number']
-        l1_4 = response1['results'][6]['distance']
+        l7_1 = response1['results'][6]['name']
+        l7_2 = response1['results'][6]['address']
+        l7_3 = response1['results'][6]['phone_number']
+        l7_4 = response1['results'][6]['distance']
 
-        l1_1 = response1['results'][7]['name']
-        l1_2 = response1['results'][7]['address']
-        l1_3 = response1['results'][7]['phone_number']
-        l1_4 = response1['results'][7]['distance']
+        l8_1 = response1['results'][7]['name']
+        l8_2 = response1['results'][7]['address']
+        l8_3 = response1['results'][7]['phone_number']
+        l8_4 = response1['results'][7]['distance']
 
-        l1_1 = response1['results'][8]['name']
-        l1_2 = response1['results'][8]['address']
-        l1_3 = response1['results'][8]['phone_number']
-        l1_4 = response1['results'][8]['distance']
+        l9_1 = response1['results'][8]['name']
+        l9_2 = response1['results'][8]['address']
+        l9_3 = response1['results'][8]['phone_number']
+        l9_4 = response1['results'][8]['distance']
 
-        l1_1 = response1['results'][9]['name']
-        l1_2 = response1['results'][9]['address']
-        l1_3 = response1['results'][9]['phone_number']
-        l1_4 = response1['results'][9]['distance']
+        l10_1 = response1['results'][9]['name']
+        l10_2 = response1['results'][9]['address']
+        l10_3 = response1['results'][9]['phone_number']
+        l10_4 = response1['results'][9]['distance']
 
-        l1_1 = response1['results'][10]['name']
-        l1_2 = response1['results'][10]['address']
-        l1_3 = response1['results'][10]['phone_number']
-        l1_4 = response1['results'][10]['distance']
+        l11_1 = response1['results'][10]['name']
+        l11_2 = response1['results'][10]['address']
+        l11_3 = response1['results'][10]['phone_number']
+        l11_4 = response1['results'][10]['distance']
 
-        l1_1 = response1['results'][11]['name']
-        l1_2 = response1['results'][11]['address']
-        l1_3 = response1['results'][11]['phone_number']
-        l1_4 = response1['results'][11]['distance']
+        l12_1 = response1['results'][11]['name']
+        l12_2 = response1['results'][11]['address']
+        l12_3 = response1['results'][11]['phone_number']
+        l12_4 = response1['results'][11]['distance']
 
-        self.labelkanaam.setText(textwrap.fill(l2_1))
+        self.l1_1.setText(la_2)
+        self.l1_2.setText(textwrap.fill(la_3))
+        self.l1_3.setText(la_4)
+        self.l1_4.setText(la_5)
+
+        self.l2_1.setText(la_6)
+        self.l2_2.setText(textwrap.fill(la_7))
+        self.l2_3.setText(la_8)
+        self.l2_4.setText(la_9)
+
+        self.l3_1.setText(la_10)
+        self.l3_2.setText(textwrap.fill(la_11))
+        self.l3_3.setText(la_12)
+        self.l3_4.setText(la_13)
+
+        self.l4_1.setText(la_14)
+        self.l4_2.setText(textwrap.fill(la_15))
+        self.l4_3.setText(la_16)
+        self.l4_4.setText(la_17)
+
+        self.l5_1.setText(la_18)
+        self.l5_2.setText(textwrap.fill(la_19))
+        self.l5_3.setText(la_20)
+        self.l5_4.setText(la_21)
+
+        self.l6_1.setText(la_22)
+        self.l6_2.setText(textwrap.fill(la_23))
+        self.l6_3.setText(la_24)
+        self.l6_4.setText(la_25)
+
+        self.l7_1.setText(la_26)
+        self.l7_2.setText(textwrap.fill(la_27))
+        self.l7_3.setText(la_28)
+        self.l7_4.setText(la_29)
+
+        self.l8_1.setText(la_30)
+        self.l8_2.setText(textwrap.fill(la_31))
+        self.l8_3.setText(la_32)
+        self.l8_4.setText(la_33)
+
+        self.l9_1.setText(la_34)
+        self.l9_2.setText(textwrap.fill(la_36))
+        self.l9_3.setText(la_37)
+        self.l9_4.setText(la_38)
+
+        self.l10_1.setText(la_38)
+        self.l10_2.setText(textwrap.fill(la_39))
+        self.l10_3.setText(la_40)
+        self.l10_4.setText(la_41)
+
+        self.l11_1.setText(la_42)
+        self.l11_2.setText(textwrap.fill(la_43))
+        self.l11_3.setText(la_44)
+        self.l11_4.setText(la_45)
+
+        self.l12_1.setText(la_46)
+        self.l12_2.setText(textwrap.fill(la_47))
+        self.l12_3.setText(la_48)
+        self.l12_4.setText(la_49)
+
+
+
+
 
 
 class medicine_search(QDialog):
