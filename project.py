@@ -9,6 +9,7 @@ import images_qrc
 import sqlite3
 import images_qrc
 import registration_img_qrc
+import homepageimageqrc
 #--------------------------------------------------------------------------------------------------------------------
 
 
