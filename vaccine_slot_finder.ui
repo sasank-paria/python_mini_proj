@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>909</width>
+    <width>878</width>
     <height>810</height>
    </rect>
   </property>
@@ -74,7 +74,8 @@ color: rgb(255, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255); </string>
+     <string notr="true">Border-radius:15px;
+background-color: rgb(255, 255, 255); </string>
     </property>
     <property name="text">
      <string/>
@@ -83,8 +84,8 @@ color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>40</y>
+      <x>270</x>
+      <y>50</y>
       <width>371</width>
       <height>81</height>
      </rect>
@@ -100,8 +101,8 @@ color:rgb(45, 169, 203)</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>100</y>
+      <x>310</x>
+      <y>110</y>
       <width>251</width>
       <height>81</height>
      </rect>
@@ -111,27 +112,28 @@ color:rgb(45, 169, 203)</string>
 color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>enter pin code</string>
+     <string>Enter Pin Code</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>262</x>
+      <x>280</x>
       <y>180</y>
       <width>321</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
+     <string notr="true">Border-radius:10px;
+color: rgb(0, 0, 0);
 font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="reg_signin_button">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>360</x>
       <y>230</y>
       <width>151</width>
       <height>41</height>
@@ -149,19 +151,19 @@ QPushButton:hover {
 };
 
 color:rgb(255, 255, 255);
-
+Border-radius:10px;
 font: 75 15pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
-     <string>search</string>
+     <string>Search</string>
     </property>
    </widget>
    <widget class="QPushButton" name="reg_signin_button_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>320</x>
       <y>280</y>
-      <width>171</width>
+      <width>231</width>
       <height>41</height>
      </rect>
     </property>
@@ -175,13 +177,13 @@ background-color: rgb(4, 118, 159)
 QPushButton:hover {
   background-color:rgb(0, 0, 0)
 };
-
+Border-radius:10px;
 color:rgb(255, 255, 255);
 
 font: 75 15pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
-     <string>book your slot</string>
+     <string>Book your slot</string>
     </property>
    </widget>
    <widget class="QPushButton" name="vaccine_slot_home_button">
@@ -205,11 +207,11 @@ QPushButton:hover {
 };
 
 color:rgb(255, 255, 255);
-
+Border-radius:10px;
 font: 75 15pt &quot;MS Sans Serif&quot;;</string>
     </property>
     <property name="text">
-     <string>home</string>
+     <string>Home</string>
     </property>
    </widget>
   </widget>
