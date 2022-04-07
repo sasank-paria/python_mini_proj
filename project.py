@@ -410,110 +410,100 @@ class news(QMainWindow):
 
     #display of news api on ui
 
-    import json
+        import requests
+        import json
+        url = "https://bing-news-search1.p.rapidapi.com/news"
 
-    import requests
+        querystring = {"count": "12", "category": "Health", "mkt": "en-GB", "safeSearch": "Off", "textFormat": "Raw"}
 
-    url = "https://google-news.p.rapidapi.com/v1/topic_headlines"
+        headers = {
+            "X-BingApis-SDK": "true",
+            "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
+            "X-RapidAPI-Key": "1f62d360a0mshab4da6de118667bp13703cjsn05c591a9a491"
+        }
 
-    querystring = {"lang": "en", "country": "INDIA", "topic": "HEALTH"}
+        response = requests.request("GET", url, headers=headers, params=querystring)
 
-    headers = {
-        "X-RapidAPI-Host": "google-news.p.rapidapi.com",
-        "X-RapidAPI-Key": "1f62d360a0mshab4da6de118667bp13703cjsn05c591a9a491"
-    }
+        response1 = response.json()
 
-    response = requests.request("GET", url, headers=headers, params=querystring)
+        # with open("news.json","w") as file:
+        # 	json.dump(response1,file)
 
-    response1 = response.json()
+        # print(response1)
 
-    with open("news.json", "w") as file:
-        json.dump(response1, file)
+        p2 = response1['value'][0]['name']
+        p3 = response1['value'][0]['url']
 
-    p1 = response1['feed']['updated']
+        p4 = response1['value'][1]['name']
+        p5 = response1['value'][1]['url']
 
-    p2 = response1['articles'][0]['title']
-    p3 = response1['articles'][0]['link']
+        p6 = response1['value'][2]['name']
+        p7 = response1['value'][2]['url']
 
-    p4 = response1['articles'][1]['title']
-    p5 = response1['articles'][1]['link']
+        p8 = response1['value'][3]['name']
+        p9 = response1['value'][3]['url']
 
-    p6 = response1['articles'][2]['title']
-    p7 = response1['articles'][2]['link']
+        p10 = response1['value'][4]['name']
+        p11 = response1['value'][4]['url']
 
-    p8 = response1['articles'][3]['title']
-    p9 = response1['articles'][3]['link']
+        p12 = response1['value'][5]['name']
+        p13 = response1['value'][5]['url']
 
-    p10 = response1['articles'][4]['title']
-    p11 = response1['articles'][4]['link']
+        p14 = response1['value'][6]['name']
+        p15 = response1['value'][6]['url']
 
-    p12 = response1['articles'][5]['title']
-    p13 = response1['articles'][5]['link']
+        p16 = response1['value'][7]['name']
+        p17 = response1['value'][7]['url']
 
-    p14 = response1['articles'][6]['title']
-    p15 = response1['articles'][6]['link']
+        p18 = response1['value'][8]['name']
+        p19 = response1['value'][8]['url']
 
-    p16 = response1['articles'][7]['title']
-    p17 = response1['articles'][7]['link']
+        p20 = response1['value'][9]['name']
+        p21 = response1['value'][9]['url']
 
-    p18 = response1['articles'][8]['title']
-    p19 = response1['articles'][8]['link']
+        p22 = response1['value'][10]['name']
+        p23 = response1['value'][10]['url']
 
-    p20 = response1['articles'][9]['title']
-    p21 = response1['articles'][9]['link']
+        p24 = response1['value'][11]['name']
+        p25 = response1['value'][11]['url']
 
-    p22 = response1['articles'][10]['title']
-    p23 = response1['articles'][10]['link']
 
-    p24 = response1['articles'][11]['title']
-    p25 = response1['articles'][11]['link']
 
-    p26 = response1['articles'][12]['title']
-    p27 = response1['articles'][12]['link']
+        self.l1_2.setText(p2)
+        self.label_5.setText(f"<a href=\"{p3}\">{p3}</a>")
 
-    p28 = response1['articles'][13]['title']
-    p29 = response1['articles'][13]['link']
+        self.l3_2.setText(p4)
+        self.l4.setText(f"<a href=\"{p5}\">{p5}</a>")
 
-    p30 = response1['articles'][14]['title']
-    p31 = response1['articles'][14]['link']
+        self.l5.setText(p6)
+        self.l6.setText(f"<a href=\"{p7}\">{p7}</a>")
 
-    self.update.setText(p1)
+        self.l7.setText(p8)
+        self.l8.setText(f"<a href=\"{p9}\">{p9}</a>")
 
-    self.l1.setText(p2)
-    self.l2.setText(f"<a href=\"{p3}\">{p3}</a>")
+        self.l9.setText(p10)
+        self.l10.setText(f"<a href=\"{p11}\">{p11}</a>")
 
-    self.l3.setText(p4)
-    self.l4.setText(f"<a href=\"{p5}\">{p5}</a>")
+        self.l11.setText(p12)
+        self.l12.setText(f"<a href=\"{p13}\">{p13}</a>")
 
-    self.l5.setText(p6)
-    self.l6.setText(f"<a href=\"{p7}\">{p7}</a>")
+        self.l13.setText(p14)
+        self.l14.setText(f"<a href=\"{p15}\">{p15}</a>")
 
-    self.l7.setText(p8)
-    self.l8.setText(f"<a href=\"{p9}\">{p9}</a>")
+        self.l15.setText(p16)
+        self.l16.setText(f"<a href=\"{p17}\">{p17}</a>")
 
-    self.l9.setText(p10)
-    self.l0.setText(f"<a href=\"{p11}\">{p11}</a>")
+        self.l17.setText(p18)
+        self.l18.setText(f"<a href=\"{p19}\">{p19}</a>")
 
-    self.l11.setText(p12)
-    self.l12.setText(f"<a href=\"{p13}\">{p13}</a>")
+        self.l19.setText(p20)
+        self.l20.setText(f"<a href=\"{p21}\">{p21}</a>")
 
-    self.l13.setText(p14)
-    self.l14.setText(f"<a href=\"{p15}\">{p15}</a>")
+        self.l21.setText(p22)
+        self.l22.setText(f"<a href=\"{p23}\">{p23}</a>")
 
-    self.l15.setText(p16)
-    self.l16.setText(f"<a href=\"{p17}\">{p17}</a>")
-
-    self.l17.setText(p18)
-    self.l18.setText(f"<a href=\"{p19}\">{p19}</a>")
-
-    self.l19.setText(p20)
-    self.l20.setText(f"<a href=\"{p21}\">{p21}</a>")
-
-    self.l21.setText(p22)
-    self.l22.setText(f"<a href=\"{p23}\">{p23}</a>")
-
-    self.l23.setText(p24)
-    self.l24.setText(f"<a href=\"{p25}\">{p25}</a>")
+        self.l23.setText(p24)
+        self.l24.setText(f"<a href=\"{p25}\">{p25}</a>")
 
 
 

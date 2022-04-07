@@ -17,9 +17,9 @@ headers = {
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 response1=response.json()
-
-with open("coviddata.json","w") as file:
-    json.dump(response1,file)
+#
+# with open("coviddata.json","w") as file:
+#     json.dump(response1,file)
 
 print(response1)
 p1=response1['response'][0]['country']
@@ -48,13 +48,13 @@ print(data)
 import matplotlib.pyplot as plt
 import numpy as np
 
-y = np.array([p7, p5, p4, p3])
-mylabels = ["deaths", "recovered", "critical", "active"]
-
-plt.pie(y, labels = mylabels)
-
-plt.show()
-
+# y = np.array([p7, p5, p4, p3])
+# mylabels = ["deaths", "recovered", "critical", "active"]
+#
+# plt.pie(y, labels = mylabels)
+#
+# plt.show()
+#
 
 
 x = np.array(["deaths", "recovered", "critical", "active"])
