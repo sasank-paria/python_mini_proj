@@ -17,11 +17,11 @@ headers = {
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 response1=response.json()
+#
+# with open("coviddata.json","w") as file:
+#     json.dump(response1,file)
 
-with open("coviddata.json","w") as file:
-    json.dump(response1,file)
-
-print(response1)
+# print(response1)
 p1=response1['response'][0]['country']
 p2=response1['response'][0]['population']
 p3=response1['response'][0]['cases']['active']
@@ -43,18 +43,18 @@ p9=response1['response'][0]['time']
 # self.l9.setText(p9)
 
 data=pandas.Series(response1)
-print(data)
+# print(data)
 
 import matplotlib.pyplot as plt
 import numpy as np
 
-y = np.array([p7, p5, p4, p3])
-mylabels = ["deaths", "recovered", "critical", "active"]
-
-plt.pie(y, labels = mylabels)
-
-plt.show()
-
+# y = np.array([p7, p5, p4, p3])
+# mylabels = ["deaths", "recovered", "critical", "active"]
+#
+# plt.pie(y, labels = mylabels)
+#
+# plt.show()
+#
 
 
 x = np.array(["deaths", "recovered", "critical", "active"])
