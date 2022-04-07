@@ -42,7 +42,7 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
+         <y>-2844</y>
          <width>1475</width>
          <height>3800</height>
         </rect>
@@ -1467,7 +1467,7 @@ Border-radius:10px;</string>
          <string>NEWS</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="news_button_homepage_2">
+       <widget class="QPushButton" name="graph_button">
         <property name="geometry">
          <rect>
           <x>70</x>
