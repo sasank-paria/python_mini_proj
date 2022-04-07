@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1520</width>
-    <height>877</height>
+    <width>1524</width>
+    <height>814</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,8 +42,8 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-2844</y>
-         <width>1475</width>
+         <y>-1147</y>
+         <width>1479</width>
          <height>3800</height>
         </rect>
        </property>
@@ -143,8 +143,8 @@ color: rgb(0,0,0);</string>
        <widget class="QLabel" name="label_6">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>1800</y>
+          <x>-20</x>
+          <y>1660</y>
           <width>1931</width>
           <height>571</height>
          </rect>
@@ -318,7 +318,7 @@ color: rgb(255, 255, 255);
 </string>
         </property>
         <property name="text">
-         <string>    DOS</string>
+         <string>   DO'S</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_20">
@@ -624,7 +624,7 @@ font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
        <widget class="QLabel" name="label_34">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>20</x>
           <y>1190</y>
           <width>341</width>
           <height>31</height>
@@ -636,30 +636,14 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(0, 0, 127);</string>
         </property>
         <property name="text">
-         <string>COVID CASES:</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_35">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>1220</y>
-          <width>561</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Find the current cases of covid in your area</string>
+         <string>VACCINATION STATUS</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_36">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>1820</y>
+          <x>20</x>
+          <y>1670</y>
           <width>411</width>
           <height>31</height>
          </rect>
@@ -676,8 +660,8 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_37">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>1850</y>
+          <x>40</x>
+          <y>1710</y>
           <width>691</width>
           <height>61</height>
          </rect>
@@ -694,7 +678,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>2380</y>
+          <y>2240</y>
           <width>671</width>
           <height>41</height>
          </rect>
@@ -710,8 +694,8 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <widget class="QLabel" name="label_39">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>2410</y>
+          <x>40</x>
+          <y>2290</y>
           <width>921</width>
           <height>51</height>
          </rect>
@@ -726,8 +710,8 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <widget class="QLabel" name="label_40">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>2450</y>
+          <x>40</x>
+          <y>2330</y>
           <width>411</width>
           <height>41</height>
          </rect>
@@ -742,8 +726,8 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <widget class="QPushButton" name="medicine_search">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>2490</y>
+          <x>70</x>
+          <y>2420</y>
           <width>301</width>
           <height>51</height>
          </rect>
@@ -943,8 +927,8 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_51">
         <property name="geometry">
          <rect>
-          <x>1100</x>
-          <y>1320</y>
+          <x>1090</x>
+          <y>1260</y>
           <width>501</width>
           <height>301</height>
          </rect>
@@ -987,10 +971,10 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_54">
         <property name="geometry">
          <rect>
-          <x>1190</x>
-          <y>2390</y>
-          <width>331</width>
-          <height>291</height>
+          <x>1160</x>
+          <y>2260</y>
+          <width>341</width>
+          <height>331</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1009,8 +993,8 @@ background-color: rgb(219, 247, 255);</string>
        <widget class="QLabel" name="label_55">
         <property name="geometry">
          <rect>
-          <x>1130</x>
-          <y>1850</y>
+          <x>1080</x>
+          <y>1780</y>
           <width>461</width>
           <height>341</height>
          </rect>
@@ -1443,8 +1427,8 @@ color: rgb(0, 0, 0);</string>
        <widget class="QPushButton" name="news_button_homepage">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>1920</y>
+          <x>40</x>
+          <y>1820</y>
           <width>141</width>
           <height>51</height>
          </rect>
@@ -1600,6 +1584,53 @@ color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
          <string>MENTAL HEALTH-08046110007</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>1340</y>
+          <width>271</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>result</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>1760</y>
+          <width>421</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(219, 247, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>and keep yourself updated with the latest news</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_66">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>1230</y>
+          <width>631</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Here you can have a looks at the total number of people vaccinated </string>
         </property>
        </widget>
       </widget>
