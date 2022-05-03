@@ -4,6 +4,8 @@ import json
 import textwrap
 
 import requests
+import matplotlib as mt
+import pandas
 
 url = "https://trueway-places.p.rapidapi.com/FindPlacesNearby"
 
@@ -17,15 +19,21 @@ headers = {
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 response1=response.json()
-#
-# with open("hospital.json","w") as file :
-#     json.dump(response1,file)
+
+with open("hospital.json","w") as file :
+    json.dump(response1,file)
+
+print(response1)
+
+data=pandas.Series(response1)
+print(data)
 
 
-l1_1=response1['results'][0]['name']
+l1_1=response1['results'][0]
 l1_2=response1['results'][0]['address']
 l1_3=response1['results'][0]['phone_number']
 l1_4=response1['results'][0]['distance']
+print(l1_1)
 #
 # l2_1=response1['results'][1]['name']
 # l2_2=response1['results'][1]['address']

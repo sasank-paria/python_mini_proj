@@ -42,7 +42,7 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-393</y>
+         <y>0</y>
          <width>1920</width>
          <height>1400</height>
         </rect>
@@ -116,11 +116,14 @@ background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(0, 0, 0);
-font: 6pt &quot;MS Shell Dlg 2&quot;;
+font: 11pt &quot;MS Shell Dlg 2&quot;;
 background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
          </property>
         </widget>
         <widget class="QLabel" name="l3_2">
@@ -158,6 +161,9 @@ background-color: rgb(255, 255, 255);</string>
          <property name="text">
           <string/>
          </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
         </widget>
         <widget class="QLabel" name="l5">
          <property name="geometry">
@@ -194,6 +200,9 @@ background-color: rgb(255, 255, 255);</string>
          <property name="text">
           <string/>
          </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
         </widget>
         <widget class="QLabel" name="l7">
          <property name="geometry">
@@ -229,6 +238,9 @@ background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
           <string/>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
          </property>
         </widget>
         <widget class="QLabel" name="l9">

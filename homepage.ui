@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1524</width>
-    <height>814</height>
+    <height>882</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -42,15 +42,15 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-1147</y>
+         <y>-2457</y>
          <width>1479</width>
-         <height>3800</height>
+         <height>3400</height>
         </rect>
        </property>
        <property name="minimumSize">
         <size>
          <width>1080</width>
-         <height>3800</height>
+         <height>3400</height>
         </size>
        </property>
        <widget class="QLabel" name="label">
@@ -1589,14 +1589,17 @@ color: rgb(255, 255, 255);</string>
        <widget class="QLabel" name="label_35">
         <property name="geometry">
          <rect>
-          <x>100</x>
-          <y>1340</y>
-          <width>271</width>
+          <x>280</x>
+          <y>1320</y>
+          <width>391</width>
           <height>61</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
         <property name="text">
-         <string>result</string>
+         <string/>
         </property>
        </widget>
        <widget class="QLabel" name="label_65">
@@ -1631,6 +1634,35 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
          <string>Here you can have a looks at the total number of people vaccinated </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_67">
+        <property name="geometry">
+         <rect>
+          <x>1070</x>
+          <y>2180</y>
+          <width>271</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_68">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>1340</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+        <property name="text">
+         <string>total vaccinated</string>
         </property>
        </widget>
       </widget>

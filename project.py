@@ -135,6 +135,28 @@ class homepage(QMainWindow):
         self.news_button_homepage.clicked.connect(self.gotonews)
         self.graph_button.clicked.connect(self.gotograph)
 
+        #covid vaccine stats
+        import requests
+        import lxml
+        from bs4 import BeautifulSoup
+
+        url = " https://www.mohfw.gov.in/"
+        header = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36",
+            "Accept-Language": "en-US,en;q=0.9"
+        }
+
+        response = requests.get(url, headers=header)
+
+        soup = BeautifulSoup(response.content, "lxml")
+        # print(soup.prettify())
+
+        price = soup.find(class_="coviddata").get_text()
+        self.label_35.setText(price)
+
+
+
+
 
         #covid data cases display
 
@@ -183,6 +205,7 @@ class homepage(QMainWindow):
         n=news()
         widget.addWidget(n)
         widget.setCurrentIndex(widget.currentIndex() + 1)
+
 
 
     def gotohospital(self):
@@ -270,11 +293,11 @@ class homepage(QMainWindow):
         widget.setCurrentIndex(widget.currentIndex() + 1)
 
 
-class hospital_finder(QDialog):
+class hospital_finder(QMainWindow):
     def __init__(self):
         super(hospital_finder,self).__init__()
         uic.loadUi("hospital_finder.ui",self)
-        self.hospital_nearme_home_button.clicked.connect(self.gotohome)
+        self.home_hf.clicked.connect(self.gotohome)
         self.hospital_find_button.clicked.connect(self.hospitalfind)
 
 
@@ -318,6 +341,8 @@ class hospital_finder(QDialog):
 
         #will show the nearbuy hospitals
         import json
+        import json
+        import textwrap
 
         import requests
 
@@ -333,127 +358,171 @@ class hospital_finder(QDialog):
         response = requests.request("GET", url, headers=headers, params=querystring)
 
         response1 = response.json()
-#this should be printed ob labels of ui page
-        l1_1 = response1['results'][0]['name']
-        l1_2 = response1['results'][0]['address']
-        l1_3 = response1['results'][0]['phone_number']
-        l1_4 = response1['results'][0]['distance']
+        try:
+            #this should be printed ob labels of ui page
+            l1_1 = response1['results'][0]['name']
+
+            l1_2 = response1['results'][0]['address']
+            l1_3 = response1['results'][0]['phone_number']
+           # l1_4 = response1['results'][0]['distance']
+
+            self.la_2.setText(l1_1)
+            self.la_3.setText(textwrap.fill(l1_2))
+            self.la_4.setText(l1_3)
+            #self.la_5.setText(l1_4)
+        except:
+            print("error in api")
 
 #variables should be rename further....
-        l2_1 = response1['results'][1]['name']
-        l2_2 = response1['results'][1]['address']
-        l2_3 = response1['results'][1]['phone_number']
-        l2_4 = response1['results'][1]['distance']
+        try:
+            l2_1 = response1['results'][1]['name']
+            l2_2 = response1['results'][1]['address']
+            l2_3 = response1['results'][1]['phone_number']
+          #  l2_4 = response1['results'][1]['distance']
+            self.la_10.setText(l2_1)
+            self.la_11.setText(textwrap.fill(l2_2))
+            self.la_12.setText(l2_3)
+           # self.la_13.setText(l2_4)
+        except:
+            print("error in api")
 
-        l3_1 = response1['results'][2]['name']
-        l3_2 = response1['results'][2]['address']
-        l3_3 = response1['results'][2]['phone_number']
-        l3_4 = response1['results'][2]['distance']
+        try:
+            l3_1 = response1['results'][2]['name']
+            l3_2 = response1['results'][2]['address']
+            l3_3 = response1['results'][2]['phone_number']
+           # l3_4 = response1['results'][2]['distance']
+            self.la_18.setText(l3_1)
+            self.la_19.setText(textwrap.fill(l3_2))
+            self.la_20.setText(l3_3)
+           # self.la_21.setText(l3_4)
+        except:
+            print("error in api")
 
-        l4_1 = response1['results'][3]['name']
-        l4_2 = response1['results'][3]['address']
-        l4_3 = response1['results'][3]['phone_number']
-        l4_4 = response1['results'][3]['distance']
+        try:
+            l4_1 = response1['results'][3]['name']
+            l4_2 = response1['results'][3]['address']
+            l4_3 = response1['results'][3]['phone_number']
+          #  l4_4 = response1['results'][3]['distance']
+            self.la_26.setText(l4_1)
+            self.la_27.setText(textwrap.fill(l4_2))
+            self.la_28.setText(l4_3)
+          #  self.la_29.setText(l4_4)
+        except:
+            print("error in api")
 
-        l5_1 = response1['results'][4]['name']
-        l5_2 = response1['results'][4]['address']
-        l5_3 = response1['results'][4]['phone_number']
-        l5_4 = response1['results'][4]['distance']
+        try:
+            l5_1 = response1['results'][4]['name']
+            l5_2 = response1['results'][4]['address']
+            l5_3 = response1['results'][4]['phone_number']
+         #   l5_4 = response1['results'][4]['distance']
+            self.la_34.setText(l5_1)
+            self.la_35.setText(textwrap.fill(l5_2))
+            self.la_36.setText(l5_3)
+         #   self.la_37.setText(l5_4)
+        except:
+            print("error in api")
 
-        l6_1 = response1['results'][5]['name']
-        l6_2 = response1['results'][5]['address']
-        l6_3 = response1['results'][5]['phone_number']
-        l6_4 = response1['results'][5]['distance']
+        try:
+            l6_1 = response1['results'][5]['name']
+            l6_2 = response1['results'][5]['address']
+            l6_3 = response1['results'][5]['phone_number']
+          #  l6_4 = response1['results'][5]['distance']
+            self.la_42.setText(l6_1)
+            self.la_43.setText(textwrap.fill(l6_2))
+            self.la_44.setText(l6_3)
+          #  self.la_45.setText(l6_4)
+        except:
+            print("error in api")
 
-        l7_1 = response1['results'][6]['name']
-        l7_2 = response1['results'][6]['address']
-        l7_3 = response1['results'][6]['phone_number']
-        l7_4 = response1['results'][6]['distance']
+        try:
+            l7_1 = response1['results'][6]['name']
+            l7_2 = response1['results'][6]['address']
+            l7_3 = response1['results'][6]['phone_number']
+      #      l7_4 = response1['results'][6]['distance']
 
-        l8_1 = response1['results'][7]['name']
-        l8_2 = response1['results'][7]['address']
-        l8_3 = response1['results'][7]['phone_number']
-        l8_4 = response1['results'][7]['distance']
+            self.la_6.setText(l7_1)
+            self.la_7.setText(textwrap.fill(l7_2))
+            self.la_8.setText(l7_3)
+        #    self.la_9.setText(l7_4)
+        except:
+            print("error in api")
 
-        l9_1 = response1['results'][8]['name']
-        l9_2 = response1['results'][8]['address']
-        l9_3 = response1['results'][8]['phone_number']
-        l9_4 = response1['results'][8]['distance']
+        try:
+            l8_1 = response1['results'][7]['name']
+            l8_2 = response1['results'][7]['address']
+            l8_3 = response1['results'][7]['phone_number']
+        #    l8_4 = response1['results'][7]['distance']
+            self.la_14.setText(l8_1)
+            self.la_15.setText(textwrap.fill(l8_2))
+            self.la_16.setText(l8_3)
+        #    self.la_17.setText(l8_4)
+        except:
+            print("error in api")
 
-        l10_1 = response1['results'][9]['name']
-        l10_2 = response1['results'][9]['address']
-        l10_3 = response1['results'][9]['phone_number']
-        l10_4 = response1['results'][9]['distance']
+        try:
+            l9_1 = response1['results'][8]['name']
+            l9_2 = response1['results'][8]['address']
+            l9_3 = response1['results'][8]['phone_number']
+         #   l9_4 = response1['results'][8]['distance']
+            self.la_22.setText(l9_1)
+            self.la_23.setText(textwrap.fill(l9_2))
+            self.la_24.setText(l9_3)
+          #  self.la_25.setText(l9_4)
+        except:
+            print("error in api")
 
-        l11_1 = response1['results'][10]['name']
-        l11_2 = response1['results'][10]['address']
-        l11_3 = response1['results'][10]['phone_number']
-        l11_4 = response1['results'][10]['distance']
+        try:
+            l10_1 = response1['results'][9]['name']
+            l10_2 = response1['results'][9]['address']
+            l10_3 = response1['results'][9]['phone_number']
+         #   l10_4 = response1['results'][9]['distance']
+            self.la_30.setText(l10_1)
+            self.la_31.setText(textwrap.fill(l10_2))
+            self.la_32.setText(l10_3)
+          #  self.la_33.setText(l10_4)
+        except:
+            print("error in api")
 
-        l12_1 = response1['results'][11]['name']
-        l12_2 = response1['results'][11]['address']
-        l12_3 = response1['results'][11]['phone_number']
-        l12_4 = response1['results'][11]['distance']
+        try:
+            l11_1 = response1['results'][10]['name']
+            l11_2 = response1['results'][10]['address']
+            l11_3 = response1['results'][10]['phone_number']
+        #    l11_4 = response1['results'][10]['distance']
+            self.la_38.setText(l11_1)
+            self.la_39.setText(textwrap.fill(l11_2))
+            self.la_40.setText(l11_3)
+          #  self.la_41.setText(l11_4)
+        except:
+            print("error in api")
 
-        self.l1_1.setText(la_2)
-        self.l1_2.setText(textwrap.fill(la_3))
-        self.l1_3.setText(la_4)
-        self.l1_4.setText(la_5)
+        try:
+            l12_1 = response1['results'][11]['name']
+            l12_2 = response1['results'][11]['address']
+            l12_3 = response1['results'][11]['phone_number']
+       #     l12_4 = response1['results'][11]['distance']
 
-        self.l2_1.setText(la_6)
-        self.l2_2.setText(textwrap.fill(la_7))
-        self.l2_3.setText(la_8)
-        self.l2_4.setText(la_9)
+            self.la_46.setText(l12_1)
+            self.la_47.setText(textwrap.fill(l12_2))
+            self.la_48.setText(l12_3)
+         #   self.la_49.setText(l12_4)
+        except:
+            print("error in api")
 
-        self.l3_1.setText(la_10)
-        self.l3_2.setText(textwrap.fill(la_11))
-        self.l3_3.setText(la_12)
-        self.l3_4.setText(la_13)
 
-        self.l4_1.setText(la_14)
-        self.l4_2.setText(textwrap.fill(la_15))
-        self.l4_3.setText(la_16)
-        self.l4_4.setText(la_17)
 
-        self.l5_1.setText(la_18)
-        self.l5_2.setText(textwrap.fill(la_19))
-        self.l5_3.setText(la_20)
-        self.l5_4.setText(la_21)
 
-        self.l6_1.setText(la_22)
-        self.l6_2.setText(textwrap.fill(la_23))
-        self.l6_3.setText(la_24)
-        self.l6_4.setText(la_25)
 
-        self.l7_1.setText(la_26)
-        self.l7_2.setText(textwrap.fill(la_27))
-        self.l7_3.setText(la_28)
-        self.l7_4.setText(la_29)
 
-        self.l8_1.setText(la_30)
-        self.l8_2.setText(textwrap.fill(la_31))
-        self.l8_3.setText(la_32)
-        self.l8_4.setText(la_33)
 
-        self.l9_1.setText(la_34)
-        self.l9_2.setText(textwrap.fill(la_36))
-        self.l9_3.setText(la_37)
-        self.l9_4.setText(la_38)
 
-        self.l10_1.setText(la_38)
-        self.l10_2.setText(textwrap.fill(la_39))
-        self.l10_3.setText(la_40)
-        self.l10_4.setText(la_41)
 
-        self.l11_1.setText(la_42)
-        self.l11_2.setText(textwrap.fill(la_43))
-        self.l11_3.setText(la_44)
-        self.l11_4.setText(la_45)
 
-        self.l12_1.setText(la_46)
-        self.l12_2.setText(textwrap.fill(la_47))
-        self.l12_3.setText(la_48)
-        self.l12_4.setText(la_49)
+
+
+
+
+
+
 
 
 
